@@ -1,0 +1,23 @@
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+h3 {
+    font-size: 30px;
+}
+#salad {
+    height: 250px;
+    width: 230px;
+}
+img {
+    border-radius: 115px;
+}
+
+body {
+    background-color: darkblue;
+}
+a:hover {
+    text-decoration: underline;
+    color: gold; }
