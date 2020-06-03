@@ -120,3 +120,16 @@ img, p, h2, h3, h4, h5, h6  {
 header p {
     margin-top: 0px;
 }
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+h3 {
+    font-size: 30px;
+}
+h1{
+    font-weight: bolder;
+    margin-bottom: .5em;
+}
