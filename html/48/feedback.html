@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCS Resaurant</title>
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+    <header>
+        <p class="spacing"><br><a href="menu.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go to our Menu</a> | <a
+                href="index.html">Homepage</a></p>
+        <p><img src="photos/phone.jpg" alt="Photo of phone"></p>
+        <H1>PCS Restaurant</H1>
+        <h2 class="class">Feedback</h2>
+    </header>
+    <form method="POST" action="feedback.php">
+        <label> First Name:<input name="FirstName" placeholder="John" required></label>
+        <label for="LastName">Last Name: </label> <input id="LastName" name="LastName" placeholder="Smith" required>
+        <label for="email">email: </label> <input type="email" id="email" name="email" placeholder="example@gmail.com"
+            required minlength="9">
+        <label for="DateVisited">Date Visited: </label> <input type="date" id="DateVisited" name="DateVisited" required>
+        <label for="Rating">Rate Us: </label> <input type="range" id="Rating" name="Rating" required min="1" max="5">
+        <label for="Comments">Comments: </label><textarea placeholder="Please enter some comments here" name="Comments"
+            id="Comments">Comment Here: </textarea>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

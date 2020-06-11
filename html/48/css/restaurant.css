@@ -1,0 +1,218 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end css reset*/
+
+html {
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    text-align: center;
+    background-color: brown;
+    color: gold;
+    font-size: 18px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0em;
+    padding-top: 0px;
+    border-radius: 15px;
+    padding-bottom: 0px;
+}
+h1 {
+    font-style: italic;
+    font-size: 3em;
+    border: 3px solid;
+    border-radius: 70px;
+    width: 515px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-family: 'Piedra', cursive;
+}
+header img {
+    width: 350px;
+    height: 250px;
+    border: 3px solid gold;
+    border-radius: 15px;
+}
+a {
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: gold;}
+a:link {
+    color: gray;}
+a:visited {
+    color: darkblue;}
+.spacing {
+font-size: 11px;
+text-align: left;
+color: darkblue;
+padding: 0px;
+margin: 0px;
+} 
+.burger {
+    background-image: url("photos/burger.jpg");
+    width: 242px;
+    height: 208px;
+}
+video {
+    margin: 1em;
+    border: 3px solid gold;
+    border-radius: 20px;
+}
+audio {
+    border: 3px solid gold;
+    border-radius: 2em;
+}
+.backround {
+    background-image: url(photos/burger.jpg);
+    width: 50px;
+    height: 50px;
+}
+img, p, h2, h3, h4, h5, h6  {
+    margin: 1em;
+    
+}
+header p {
+    margin-top: 0px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+h3 {
+    font-size: 30px;
+}
+h1{
+    font-weight: bolder;
+    margin-bottom: .5em;
+}
+footer {
+    position: fixed;
+    bottom: 16px;
+    background-color: darkgreen;
+    padding: 30px;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    width: 25%;
+}
+footer img {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+
+}
+article>div {
+    text-shadow: 2px 2px blue;
+}
+h2+p {
+    border: solid brown;
+    padding: 1em;
+    border-radius: 25px;
+}
+h2~p::first-line {
+    text-shadow: -2px -2px darkgreen;
+}
+p::first-letter {
+    font-size: 1.25em;
+}
+h2:not(.class):hover {
+    text-decoration:underline rgb(235 205 0);
+}
+a[href*="Return"] {
+    background-color: gray;
+}
+@media screen and (max-width: 799px){
+    footer {
+        width: 15%;
+        font-size: 10px;
+        padding: 15px;
+    }
+    footer img {
+        top: -10px;
+        right: -10px;
+    }
+    video {
+        width: 300px;
+    }
+    header img {
+        width: 300px;
+        height: 200px;
+    }
+    h1 {
+        font-size: xx-large;
+        width: 70%;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h3 {
+        font-size: large;
+    }
+}
+footer img:hover {
+    /*top: -10px;
+    left: -10px;*/
+    visibility: collapse;
+}
+footer:hover {
+    visibility: collapse;
+}
+
+/*2.	Use some of the new selectors we saw
+ last night to style something on your 
+ restaurant site. Some new selectors to use:
+o	attribute selectors: a[b] - where b can
+     use ^= starts with, $= ends with,
+    *= contains
+o	first-child, last-child, first-of-type,
+     last-of-type
+*/

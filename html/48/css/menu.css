@@ -1,0 +1,31 @@
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+h3 {
+    font-size: 30px;
+}
+#salad {
+    height: 250px;
+    width: 230px;
+}
+img {
+    border-radius: 115px;
+}
+
+body {
+    /*background-color: darkblue;*/
+    background: linear-gradient(90deg, rgba(255,215,0,1) 0%, rgba(0,86,255,1) 4%, rgba(0,0,139,1) 36%, rgba(0,0,139,1) 75%, rgba(42,104,165,1) 85%, rgba(42,139,255,1) 90%, rgba(0,159,255,1) 95%, rgba(255,248,0,1) 96%, rgba(255,215,0,1) 100%);
+}
+a {
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: lightblue;}
+a:visited {
+    color: gold;}
+    

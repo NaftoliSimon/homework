@@ -1,0 +1,20 @@
+input:not([type="submit"]), textarea {
+    padding: .5em;
+    margin: auto;
+    background-color: brown;
+    color: gold;
+    border: .15em solid gold;
+    border-radius: .5em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    margin-top: .2em;
+    text-align: center;
+    
+}
+input [type="submit"] {
+    background-color: brown;
+}
+body {
+    padding: 5px;
+}
