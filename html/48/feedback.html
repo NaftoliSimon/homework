@@ -18,14 +18,20 @@
         <h2 class="class">Feedback</h2>
     </header>
     <form method="POST" action="feedback.php">
-        <label> First Name:<input name="FirstName" placeholder="John" required></label>
-        <label for="LastName">Last Name: </label> <input id="LastName" name="LastName" placeholder="Smith" required>
-        <label for="email">email: </label> <input type="email" id="email" name="email" placeholder="example@gmail.com"
-            required minlength="9">
-        <label for="DateVisited">Date Visited: </label> <input type="date" id="DateVisited" name="DateVisited" required>
-        <label for="Rating">Rate Us: </label> <input type="range" id="Rating" name="Rating" required min="1" max="5">
-        <label for="Comments">Comments: </label><textarea placeholder="Please enter some comments here" name="Comments"
-            id="Comments">Comment Here: </textarea>
+        <article>
+            <label for="FirstName">First Name: </label> <input id="FirstName" name="FirstName" placeholder="John"
+                required>
+            <label for="LastName">Last Name: </label> <input id="LastName" name="LastName" placeholder="Smith" required>
+            <label for="email">email: </label> <input type="email" id="email" name="email"
+                placeholder="example@gmail.com" required minlength="9">
+            <label for="DateVisited">Date Visited: </label> <input type="date" id="DateVisited" name="DateVisited"
+                required>
+            <label for="Comments">Comments: </label><textarea placeholder="Please enter some comments here"
+                name="Comments" id="Comments">Comment Here: </textarea>
+            <label for="Rating">Rate Us: </label> <input type="range" id="Rating" name="Rating" required min="1"
+                max="10">
+
+        </article>
         <input type="submit">
     </form>
 </body>

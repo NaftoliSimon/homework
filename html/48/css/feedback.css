@@ -5,16 +5,17 @@ input:not([type="submit"]), textarea {
     color: gold;
     border: .15em solid gold;
     border-radius: .5em;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     margin-bottom: 1em;
     margin-top: .2em;
     text-align: center;
     
 }
-input [type="submit"] {
-    background-color: brown;
-}
 body {
     padding: 5px;
 }
+article {
+    display: flex;
+    flex-direction: column;
+    }
