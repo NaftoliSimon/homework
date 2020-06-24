@@ -1,0 +1,75 @@
+
+body {
+    display: grid;
+    grid: repeat(7, 5em) / repeat(7, 5em);
+}
+div {
+    background-color: darkorange;
+    margin: 1px;
+}
+
+div:nth-child(1) {
+    grid-column-start: 1;
+}
+
+div:nth-child(2) {
+    grid-row-start: 2;
+}
+
+div:nth-child(3) {
+    grid-row-start: 3;
+}
+
+div:nth-child(4) {
+    grid-row-start: 4;
+}
+
+div:nth-child(5) {
+    grid-row-start: 5;
+}
+div:nth-child(6) {  
+    grid-row-start: 6;
+}
+div:nth-child(7) {
+    grid-row-start: 7;
+}
+
+@media screen and (min-width:600px) {
+    div {
+        background-color: teal;
+    }
+    div:nth-child(1) {
+        /* grid-column-end: 3;  */
+        grid-column: span 2;
+        /* TODO: Using named grid template areas. */
+    }
+    div:nth-child(5) {
+        grid-row-start: 2;
+    }
+    div:nth-child(6) {  
+        grid-row-start: 3;
+    }
+    div:nth-child(7) {
+        grid-row-start: 4;
+    }
+}
+@media screen and (min-width:700px) {
+    div {
+        background-color: brown;
+    }
+    div:nth-child(3) {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    div:nth-child(4) {
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }
+   div:nth-child(6) {  
+        grid-row-start: 2;
+    }
+    div:nth-child(7) {
+        grid-row-start: 2;
+    }
+    
+}
