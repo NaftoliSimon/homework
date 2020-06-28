@@ -1,0 +1,129 @@
+body {
+margin: 3em;
+margin-bottom: 4em;
+text-align: start;
+font-family: Helvetica, Arial, sans-serif;
+}
+.jumbotron {
+    background-color: lightgrey;
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-align: left;
+}
+div, div h2, h3 {
+    text-align: center;
+}
+img, video {
+    width: 100%;
+}
+article p {
+    text-align: justify;
+}
+
+/* Form */
+    form {
+        display: grid;
+    }
+    input {
+        margin: 5px;
+        border-radius: 5px;
+        box-shadow: 4px 4px  black;
+        border-color: lightgrey;
+    }
+    #submit {
+        box-shadow: 1px 1px black;
+        width: 7em;  
+        height: 1.5em;
+        margin: auto;
+    }
+    #submit:hover {
+        background-color: lightgray;
+        box-shadow: 5px 5px;
+    }
+    #submit:active {
+        box-shadow: none;
+        transform: translate(5px, 5px);
+    }
+
+/* Table */
+    table {
+        border-collapse: collapse;
+        margin: auto;
+    }
+    #table {
+        overflow-x: auto;
+    }
+    td, th {
+        border: 1px solid black;
+    }
+    caption {
+        font-weight: bold;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+    tbody tr :nth-child(6), tfoot tr :nth-child(2) {
+        color: red;
+    }
+    td {
+        text-align: end;
+    }
+    tbody tr:hover {
+        background-color: lightblue;
+    }
+
+/* NavBar and Footer*/
+    header, footer {
+        background-color: black;
+        color: white;
+        position: fixed;
+        width: 100%;
+        left: 0;  
+    }
+    header {
+        top: 0;
+    }
+    footer {
+        bottom: 0;
+        text-indent: 2em;
+        padding: 1em;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+    li {
+        display: inline;
+        padding: 1em;
+        padding-left: .5em;
+    }
+/* Larger Screen Layout */
+    @media screen and (min-width:1000px) {
+    /* Products */
+        .products {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1em;
+            padding-bottom: 2em;
+        }
+        .line {
+            border-right: 1px solid black;
+            padding-right: 1em;
+        }
+
+    /* Form */
+        form {
+            display: block;
+        }
+    }

@@ -38,10 +38,21 @@ div:nth-child(7) {
     div {
         background-color: teal;
     }
+    body {
+    grid-template-columns: repeat(7, 5em);
+    grid-template-areas: 
+    "1" "1"
+   /* "2" "5"
+    "3" "6"
+    "4" "7"*/;
+    }
     div:nth-child(1) {
         /* grid-column-end: 3;  */
-        grid-column: span 2;
+        /* grid-column: span 2; */
         /* TODO: Using named grid template areas. */
+       
+   grid-area: "1";
+
     }
     div:nth-child(5) {
         grid-row-start: 2;
