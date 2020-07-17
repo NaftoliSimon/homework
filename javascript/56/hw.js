@@ -18,24 +18,29 @@ console.log('dow.getDayNumber ("monday")', dow.getDayNumber('monday'));
 //2.
 //not finished yet
 
-const interest = (function () {
+const interestCalculator = (function () {
     'use strict';
 
-    const numberOfYear = ['1999', '2000', '2001', '2002', '2003', '2004', '2005'];// ['year1', 'year2', 'year3', 'year4', 'year5', 'year6', 'year7']
-    //interestRate
-    //principleAmount
+    let interestRate;
+    let years;
 
     return {
         //3 functions to retrun: calculateInterest, setRate, setYear
-        calculateInterest: function () {
-            return;
-        }
-        setRate: 
-        }
-        setYear: 
+        
+        setRate: newInterestRate => interestRate = newInterestRate,
+        
+        setYear: newYears => years = newYears,
+
+        calculateInterest: function (principle) {
+            let n = principle;
+            for(let i = 0; i > years; i++) {
+                n += n * interestRate;
+            }
+            return n - principle;
         }
     };
 }());
 
-console.log('dow.getDayName (2)', dow.getDayName(2));
-console.log('dow.getDayNumber ("monday")', dow.getDayNumber('monday'));
+console.log('rate', interestCalculator.setRate(0.07));
+console.log('years', interestCalculator.setYear(4));
+console.log('interestCalculator.calculateInterest',interestCalculator.calculateInterest);
