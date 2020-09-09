@@ -1,7 +1,7 @@
 (function () { //this is part 1 of the clock question where html code is pre written
     'use strict';
 
-
+//if wanted make hour not have 0 appear in the tens spot when there is no 1
     let seconds = document.getElementById('seconds');
     let minutes = document.getElementById('minutes');
     let hours = document.getElementById('hours');

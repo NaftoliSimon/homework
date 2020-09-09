@@ -1,6 +1,8 @@
 (function () { // this is clock module but current time is added
     'use strict';
 
+//TODO: if wanted make hour not have 0 appear in the tens spot when there is no 1
+
     const clock = document.createElement('div');
     const seconds = document.createElement('span');
     const minutes = document.createElement('span');

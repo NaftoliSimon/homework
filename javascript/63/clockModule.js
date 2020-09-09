@@ -67,4 +67,6 @@
 TODO: If not keeping real time, you can track hours, minutes, seconds like we did R, G, and B,
 in the colors example in class. That might be interesting to do as an exercise even if you ultimately
 make it so that the time is correct
+
+if wanted make hour not have 0 appear in the tens spot when there is no 1
 */
