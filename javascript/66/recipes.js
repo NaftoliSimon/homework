@@ -10,7 +10,7 @@
     const ingredientsTitle = $('#ingredientsTitle');
     let oldArraylength;
 
-    function callFetch(elem, file) {
+    function fetchData(elem, file) {
         elem.change(() => {
             fetch(file)
                 .then(r => {
@@ -40,8 +40,8 @@
             }
         }
     }
-    callFetch(pizza, 'json/pizza.json');
-    callFetch(smores, 'json/smores.json');
-    callFetch(ccPretzels, 'json/ChocolateCoverdPretezels.json');
+    fetchData(pizza, 'json/pizza.json');
+    fetchData(smores, 'json/smores.json');
+    fetchData(ccPretzels, 'json/ChocolateCoverdPretezels.json');
 
 }());
