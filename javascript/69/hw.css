@@ -1,0 +1,45 @@
+html,
+body,
+#map,
+#searchbar {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#map {
+  flex: 75%;
+}
+
+#searchbar {
+  flex: 25%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 10fr;
+  text-align: center;
+}
+
+#location {
+  margin-top: 1em;
+}
+
+#title {
+  font-style: italic;
+}
+
+#searchbar ul,
+#searchbar li {
+  list-style-type: none;
+  margin: 0;
+}
+
+#searchbar li {
+  padding-top: .5em;
+  color: blue;
+}
+
+#searchbar li:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
