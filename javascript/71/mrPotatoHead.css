@@ -1,0 +1,39 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("images/backgroundImg5.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box {
+  position: absolute;
+}
+
+#bodyimg,
+#bodyimg2,
+#bodyimg3 {
+  z-index: -1 !important;
+  top: 150px;
+  left: 50px;
+}
+
+#bodyimg2 {
+  left: 500px;
+}
+
+#bodyimg3 {
+  left: 900px;
+}
+
+audio {
+  position: absolute;
+  top: 0px;
+  opacity: 50%;
+}
