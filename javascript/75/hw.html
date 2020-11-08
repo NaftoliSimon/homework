@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        #controls {
+            position: absolute;
+        }
+
+        #antAmountDisplay {
+            position: absolute;
+            right: 0;
+            padding-right: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="controls">
+        Color: <input type="color" id="color">
+        Amount: <input type="number" id="addAmount" min="1" max="100" value="1">
+        <button>add</button>
+    </form>
+    <div id="antAmountDisplay">Ant Count: <span id="antAmount">0</span></div>
+    <canvas id="theCanvas"></canvas>
+    <script src="hw.js"></script>
+</body>
+
+</html>
