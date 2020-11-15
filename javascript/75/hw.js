@@ -46,7 +46,7 @@
             this.context.fillStyle = this.color;
         }
         move() {
-            if (frame < numOfConsecutiveFrames) {
+            if (frame < numOfConsecutiveFrames) { 
                 this.x += this.dx;
                 this.y += this.dy;
                 frame++;
