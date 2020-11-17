@@ -1,0 +1,15 @@
+{
+  "name": "hw78",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "hw using webpack",
+  "main": "simpleApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
