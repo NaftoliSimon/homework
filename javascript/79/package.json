@@ -1,15 +1,20 @@
 {
-  "name": "hw78",
+  "name": "hw79",
   "private": "true",
   "version": "1.0.0",
   "description": "hw using webpack",
   "main": "simpleApp.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "me",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
   }
 }
