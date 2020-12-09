@@ -5,9 +5,14 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    rpsGame: './src/rpsGame.js',
+    rock: './src/rock.js',
+    paper: './src/paper.js',
+    scissors: './src/scissors.js'
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -27,14 +32,15 @@ module.exports = {
   //devtool: 'source-map', //this is for user stage 
   devServer: {
     contentBase: './dist',
+    //hot: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'hw 80 webpack App',
-      template: './src/index.html'
+      title: 'Rock Paper Scissors Game',
+      template: './src/rpsGame.html'
     }),
     new ESLintPlugin(),
-    new webpack.BannerPlugin('copyright hw 80 2020')
+    new webpack.BannerPlugin('copyright PCS hw81 2020')
   ],
 };
