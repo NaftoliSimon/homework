@@ -79,7 +79,8 @@ function getComputerPick(yourPick) {
     }
 }
 /*
-TODO: use pictures instead of buttons
+TODO: 
+use pictures instead of buttons
 make two human player option?
 keep score of ties, wins, and loses 
 */
