@@ -1,0 +1,20 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 3em);
+    gap: .5em;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 1em;
+    margin-top: 2em;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+}
+#display {
+    grid-column: span 3;
+    text-align: right;
+}
+.title {
+    text-align: center;
+}
