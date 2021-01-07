@@ -1,0 +1,22 @@
+body {
+    width: 80%;
+    margin: auto;
+  }
+  
+  header {
+    text-align: center
+  }
+  
+  ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-decoration: underline;
+  }
+  
+  h4 {
+    margin-bottom: .5em;
+    margin-top: 1.5em;
+  }
