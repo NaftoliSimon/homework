@@ -1,0 +1,13 @@
+body {
+    width: 90%;
+  margin: auto;
+
+}
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding: .25em;
+}
