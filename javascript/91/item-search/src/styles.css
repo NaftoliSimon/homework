@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 80%;
+    margin: auto;
+    background-color: tan;
+    text-align: center;
+}
+input {
+    background-color: lightsteelblue;
+}
+.addButton {
+    border-radius: 1em;
+    font-size: 1em;
+    background-color: lightsteelblue;
+}

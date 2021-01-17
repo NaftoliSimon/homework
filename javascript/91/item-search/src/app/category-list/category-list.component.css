@@ -1,0 +1,22 @@
+button {
+    margin: .25em;
+    background-color: lightskyblue;
+    border: 2px solid black;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+button:hover {
+    background-color: black;
+    color: tan;
+    cursor: pointer;
+    border-color: lightskyblue;
+}
+.delete {
+    color: red;
+    background-color: black;
+}
+.delete:hover {
+    color: black;
+    background-color: red;
+    border-color: black;
+}

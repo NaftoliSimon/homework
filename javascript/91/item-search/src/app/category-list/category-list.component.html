@@ -1,0 +1,13 @@
+<h2>Choose A Category</h2>
+
+<ul>
+  <li *ngFor="let category of categories; let i = index">
+    <button (click)="handleClick(category, i)">{{category.name}}</button>
+    <button class='delete' (click)="deleteCategory(i)">Delete</button>
+  </li>
+</ul>
+<input type="text" #nameInput ><button (click)="addCategory(nameInput.value)" class="addButton">Add Category</button>
+<hr>
+<div *ngIf="selectedCategory">
+  <app-item-list [category]="selectedCategory"></app-item-list>
+</div>

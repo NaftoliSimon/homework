@@ -1,0 +1,17 @@
+<h2>{{category.name}}</h2>
+<h4>Items</h4>
+<ul>
+    <li *ngFor="let item of category.items; let i = index">
+        <i>{{item.name}}</i> - {{item.price}}
+    </li>
+</ul>
+<div *ngIf="!category.items[0]">
+    No items in category
+</div>
+<span>TODO: use form to add new item</span>
+<!--form #form="ngForm">
+   Name: <input name="name" #nameInput [(ngModel)]="name" required minlength="2" maxlength="35" />
+    Price: <input name="price" #priceInput [(ngModel)]="price" required minlength="3" maxlength="20" />
+
+    <button  class="addButton">Add Item</button>
+</form-->
