@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    text-align: center;
+}
+div, input {
+    margin: 1em;
+}
+input {
+  border-radius: .5em;
+}
+
+  input:invalid {
+    background-color: #ffdddd;
+  }
+
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }
+  input:valid {
+    background-color: #ddffdd;
+    border-color: darkgreen;
+  }

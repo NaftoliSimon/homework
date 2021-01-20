@@ -1,0 +1,14 @@
+<h1>PCS Weather App</h1>
+
+<input #zipInput type="search" (change)="getWeather(zipInput.value)" required minlength="5" maxlength="5"/>
+<br>
+
+<div *ngIf="name; else elseBlock">
+<div>The Weather in {{name}} is</div>
+<img src={{icon}} />
+<div>{{temperature}}, {{description}}</div>
+</div>
+<ng-template #elseBlock>Enter a zip to see weather. Example: 08701</ng-template>
+<!--
+    TODO: display results in weather-display component instead of here
+-->
