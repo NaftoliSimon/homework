@@ -1,0 +1,9 @@
+<div *ngFor="let post of posts | async; let i = index">
+  <ng-container *ngIf="i < startingIndex + 3 && i >= startingIndex">
+  <app-post [post]="post"></app-post>
+</ng-container>
+</div>
+<button (click)="onPrev()"><-- Prev</button> <button (click)="onNext()">Next --></button>
+<!--
+  TODO: get the proper lastIndex 
+-->

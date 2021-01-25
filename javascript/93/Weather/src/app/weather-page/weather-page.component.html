@@ -1,0 +1,15 @@
+<a [routerLink]="['/examples']">Examples</a>
+<div class="row d-flex flex-row-reverse">
+  <form class="form-inline">
+    <input #zipInput class="form-control mb-2 mr-sm-2" id="zip" placeholder="Enter Zip For Weather"
+      (change)="getWeather(zipInput.value)">
+  </form>
+</div>
+<ng-container *ngIf="weather | async as weather; else elseBlock">
+  <app-weather [weather]="weather"></app-weather>
+</ng-container>
+<ng-template #elseBlock>
+  <div class="text-center">
+    Please enter a zip code.
+  </div>
+</ng-template>
