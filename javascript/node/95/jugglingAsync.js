@@ -2,29 +2,24 @@
 
 const http = require('http');
 
-let dataString = '';
-let index = 2;
 const arrLength = process.argv.length;
-const lastIndex = arrLength - 1;
+const finalIndex = arrLength - 1;
+let results = [];
+let index = 2;
 
-
-for(let i = 2; i < arrLength; i++) {
+for(let i = index; i < arrLength; i++) {
     let url = process.argv[i];
-    //console.log('url:', url);
-    http.get(url, callback)
+    http.get(url, function (response) {
+        let dataString = '';
+        response.setEncoding('utf8');
+        response.on('data', data => dataString += data);
+        response.on('error', err => console.error(err));
+        response.on('end', () => {
+            results[i] = dataString; //slots 0 & 1 of the array are empty.   [i-2] to change 
+            if(index === finalIndex) {
+               results.forEach(data => console.log(data));
+            }
+            index++;
+        });
+    })
 }
-function callback(response) {
-    response.setEncoding('utf8');
-    response.on('data', data => dataString += data);
-    response.on('error', err => console.log('error:', err));
-    response.on('end', () => {
-        dataString += '\n';
-        if(index === lastIndex) {
-            console.log(dataString);
-        }
-        index++;
-    });
-}
-
-
-//NOT FINISHED YET
