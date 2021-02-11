@@ -1,0 +1,17 @@
+<p>Welcome to {{ title }}</p>
+
+
+<ul>
+  {{#contacts}}
+  <li>
+    Name: {{name}} <br>
+    Email: {{email}} <br>
+    Phone: {{phone}} <br>
+  </li>
+  <br>
+  {{/contacts}}
+
+  {{#isEmpty}}
+  <b>no contacts loaded</b>
+  {{/isEmpty}}
+</ul>
