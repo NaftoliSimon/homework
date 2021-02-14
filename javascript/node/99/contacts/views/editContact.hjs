@@ -1,0 +1,28 @@
+<link rel='stylesheet' href='/stylesheets/addContact.css' />
+
+<form id="contactForm" method="POST">
+  <div class="formGroup">
+    <label for="firstName">first:</label>
+    <input id="firstName" name="firstName" value="{{contact.firstName}}">
+  </div>
+  <div class="formGroup">
+    <label for="lastName">last:</label>
+    <input id="lastName" name="lastName" value="{{contact.lastName}}">
+  </div>
+  <div class="formGroup">
+    <label for="email">email:</label>
+    <input id="email" name="email" type="email" value="{{contact.email}}">
+  </div>
+  <div class="formGroup">
+    <label for="phone">phone:</label>
+    <input id="phone" name="phone" value="{{contact.phone}}">
+  </div>
+  <input hidden id="id" name="id" value={{contact.id}}> <!-- saves id from cantact into form data -->
+  <div class="buttons">
+    <button class="btn">update</button>
+    <a class="btn" href="/contacts">cancel</a>
+  </div>
+</form>
+<!--
+  TODO: part 3 from hw
+-->

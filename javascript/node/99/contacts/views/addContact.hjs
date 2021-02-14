@@ -1,0 +1,29 @@
+<link rel='stylesheet' href='/stylesheets/addContact.css' />
+
+<form id="contactForm" method="POST">
+  <div class="formGroup">
+    <label for="firstName">first:</label>
+    <input id="firstName" name="firstName">
+  </div>
+  <div class="formGroup">
+    <label for="lastName">last:</label>
+    <input id="lastName" name="lastName" required>
+  </div>
+  <div class="formGroup">
+    <label for="email">email:</label>
+    <input id="email" name="email" type="email">
+  </div>
+  <div class="formGroup">
+    <label for="phone">phone:</label>
+    <input id="phone" name="phone">
+  </div>
+  <input hidden id="id" name="id" value={{id}}> <!-- adds id to added contacts so that they can be edited and deleted -->
+  <div class="buttons">
+  <div class="buttons">
+    <button class="btn">add contact</button>
+    <a class="btn" href="/contacts">cancel</a>
+  </div>
+</form>
+<!--
+  TODO: part 3 from hw
+-->
