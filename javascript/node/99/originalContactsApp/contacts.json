@@ -1,0 +1,14 @@
+[
+  {
+    "firstName": "Donald", 
+    "lastName": "Trump",
+    "phone": "123-456-7890",
+    "email": "dtrump@whitehouse.gov"
+  },
+  {
+    "firstName": "Joe",
+    "lastName": "Biden",
+    "phone": "987-654-3210",
+    "email": "jbiden@basement.com"
+  }
+]

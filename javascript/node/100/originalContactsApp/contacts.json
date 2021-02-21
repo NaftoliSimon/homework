@@ -1,13 +1,13 @@
 [
   {
-    "first": "Donald",
-    "last": "Trump",
+    "firstName": "Donald", 
+    "lastName": "Trump",
     "phone": "123-456-7890",
     "email": "dtrump@whitehouse.gov"
   },
   {
-    "first": "Joe",
-    "last": "Biden",
+    "firstName": "Joe",
+    "lastName": "Biden",
     "phone": "987-654-3210",
     "email": "jbiden@basement.com"
   }

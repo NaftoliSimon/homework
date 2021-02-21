@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-//NOT FINISHED YET
+
 
 let contacts = [
     {
@@ -45,14 +45,17 @@ let contacts = [
 router.get('/', function (req, res, next) {
     res.render('layout', { title: 'Express', partials: { content: 'index' } });
 });
-router.get('/contacts', function (req, res, next) {
-    //NOT FINISHED YET
-
-    //res.json(contacts);
-    jsonContacts = JSON.stringify(contacts);
-    //NOT FINISHED YET
-    res.end(jsonContacts)
+router.get('/contacts', function (req, res, next) { 
+    res.writeHead(200, {
+        'content-type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+    });
+    rawJsonContactsData = JSON.stringify(contacts);
+    res.end(rawJsonContactsData)
 });
 
 module.exports = router;
-//NOT FINISHED YET
+/* 
+see line 81 in originalContactsApp/contacts.js, 
+also http://localhost:3000/api/contacts 
+*/

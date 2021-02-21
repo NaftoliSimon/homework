@@ -1,5 +1,5 @@
 /* global pcs*/
-(function () {
+(function () {     //see LINE 81 for change
   'use strict';
 
   let contacts = [];
@@ -30,8 +30,8 @@
     contacts.push(newContact);
 
     const theNewRow = $(`<tr>
-            <td>${newContact.first}</td>
-            <td>${newContact.last}</td>
+            <td>${newContact.firstName}</td> 
+            <td>${newContact.lastName}</td>
             <td>${newContact.email}</td>
             <td>${newContact.phone}</td>
             <td><button>delete</button></td>
@@ -77,8 +77,8 @@
 
   $('#load').click(async () => {
     try {
-      //let r = await fetch('contacts.json');
-      let r = await fetch('http://localhost:3000/api/contacts'); //NOT FINISHED YET
+      //let r = await fetch('contacts.json'); //next line replaces this line for 
+      let r = await fetch('http://localhost:3000/api/contacts');//      <---------------------------------
       let contacts = await r.json();
       contacts.forEach(addContact); //contact => addContact(contact));
       console.log('original contacts:', contacts);
@@ -88,4 +88,3 @@
   });
 
 }());
-//NOT FINISHED YET
