@@ -1,0 +1,8 @@
+<h5>Welcome to {{ title }}</h5>
+<h5>Please log in</h5>
+<form>
+    Your name: <input type="name" name="name" />
+    <button>save</button>
+</form>
+
+<h5>Hello {{name}}</h5>

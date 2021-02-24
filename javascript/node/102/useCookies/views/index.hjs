@@ -1,0 +1,4 @@
+<h5>Welcome to {{ title }}</h5>
+
+
+<div>Cookies will reset after 150 seconds</div>

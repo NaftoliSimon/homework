@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h3>{{ title }}</h3>
+  {{>content}}
+  <hr>
+  <h1>
+    You loaded pages on this site {{visited}} time{{#multiple}}s{{/multiple}}
+  </h1>
+  <hr>
+  <nav>
+    <a href="http://localhost:3000/loggedIn">Already Logged In</a> |
+    <a href="http://localhost:3000/logIn">Log In Here</a> |
+    <a href="http://localhost:3000/">Home Page</a>
+  </nav>
+</body>
+
+</html>
